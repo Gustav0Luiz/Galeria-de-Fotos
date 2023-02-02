@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(45deg, #595cff , #c6f8ff);
+
+}
+header {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1 {
+    font-family: 'Aboreto', cursive;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #000;
+}
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 1.8vw;
+    
+}
+.gallery-items {
+    width: 320px;
+    height: 320px; 
+    border: 10px solid #eee;
+    box-shadow: 5px 5px 5px #0006;
+    transition: transform .2s linear;
+}
+.gallery-items:hover {
+    transform: scale(1.3);
+}
+
+.gallery-items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-style: italic;
+    font-family: 'Aboreto', cursive;
+    font-weight: 400;
+}
+
+@media (min-width:376px) and (max-width:527px) {
+    header h1 {
+        font-size: 2.3rem
+    }
+    .gallery-items {
+        width: 300px;
+        height: 300px; 
+        border: 8px solid #eee;
+        box-shadow: 5px 5px 5px #0006;
+        transform: none;
+        transition: none;
+    }
+}
+
+@media (max-width:375px) {
+    header h1 {
+        font-size: 1.7rem
+    }
+    .gallery-items {
+        width: 290px;
+        height: 290px; 
+        border: 8px solid #eee;
+        box-shadow: 5px 5px 5px #0006;
+        transform: none;
+        transition: none;
+    }
+
+}
